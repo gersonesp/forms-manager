@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      greeting: ''
+      name: "",
+      greeting: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,7 +19,7 @@ class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch(`/api/greeting?name=${encodeURIComponent(this.state.name)}`)
+    fetch(`/api/users?name=${encodeURIComponent(this.state.name)}`)
       .then(response => response.json())
       .then(state => this.setState(state));
   }

@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "gerson",
+    "password": null,
+    "database": "forms-manager",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "gerson",
+    "password": null,
+    "database": "forms-manager_test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "gerson",
+    "password": null,
+    "database": "forms-manager_production",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
